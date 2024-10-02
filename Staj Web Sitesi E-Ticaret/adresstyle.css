@@ -1,0 +1,988 @@
+*{
+    box-sizing: border-box;  
+    font-family: Arial , sans-serif;
+}
+
+body{
+     margin: 0;
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+
+.header{
+    background-color:  rgba(250, 242, 242, 0.411);
+    height: 100px;
+}
+
+.container{
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.logo-container{
+    height: 86px;
+    width: 200px;
+
+}
+
+.logo{
+    background: url("resimler/TrendMentor-4.png");
+    height: 100px; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -120pX;
+    background-position-x: -50px;
+}
+
+header{
+    z-index: 100;
+}
+
+/***Arama Çubuğu***/
+
+.search-container{
+    margin-left: 110px;
+    background-color: rgb(228, 176, 245) ;
+    width: 650px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 27px;
+    overflow: hidden;
+}
+
+.search-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(223, 126, 243);
+    border-right: 0;
+    outline: none;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.search-icon{
+    width: 40px;
+    background-color:rgb(228, 176, 245) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;   
+}
+
+/***Hesabım***/
+
+.navbar {
+    overflow: hidden;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+  
+.dropdown{
+    margin-left: 55px;
+    margin-top: 23px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+  
+.dropdown .dropbtn {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 13px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown .dropbtn:hover{
+    color: rgb(223, 126, 243);
+    transition: .3s;
+    text-decoration: underline;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:999;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content p{
+    font-size: 15px;
+    margin-left: 8px;
+    color: rgb(223, 126, 243);
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fav{
+    margin-top: 23px;
+    padding: 13px;
+    border-radius: 10px;
+    margin-left: 25px;
+    border: 1px solid rgb(223, 126, 243); 
+}
+
+.shop{
+    margin-top: 23px;
+    margin-left: 50px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+.navbar .fav:hover{
+    color: rgb(223, 126, 243);
+    transition: .3s;
+    text-decoration: underline;
+}
+
+.navbar .shop:hover{
+    color: rgb(223, 126, 243);
+    transition: .3s;
+    text-decoration: underline;
+}
+/***Kategoriler***/
+
+.navigation-wrapper{
+    float: left;
+    position: relative;
+    border-bottom: 1px solid #c4c2c2;
+    z-index: 1;
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    width: 1450px;
+    height: 18px;
+    position: relative;
+    margin-top: 0;
+    background-color: rgb(248, 236, 236);
+}
+
+nav ul.main-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    width: 100%;
+    position: relative;
+}
+
+nav ul.main-nav li a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+/***Açılır Menü***/
+
+/***Moda***/
+
+.menu1{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 160px;
+    margin-left: 60px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav ul.main-nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 130px
+}
+
+nav .catmenu-link1 .menu1 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 30px;
+    
+}
+
+nav .catmenu-link1 .menu1 ul li a{
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link1 .menu1 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+
+nav ul li.catmenu-link1:hover .menu1{
+    display: block;
+}
+
+nav .catmenu-link1 .menu1 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu1 img{
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+/***Elektronik***/
+
+.menu2{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 190px;
+    margin-left: 50px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link2 .menu2 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+nav .catmenu-link2 .menu2 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto;
+}
+
+nav .catmenu-link2 .menu2 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+nav ul li.catmenu-link2:hover .menu2{
+    display: block;
+}
+
+nav .catmenu-link2 .menu2 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu2 img{
+    margin-top: 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+    
+}
+
+/***Anne&Bebek***/
+
+.menu3{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 140px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link3 .menu3 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link3 .menu3 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link3 .menu3 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+nav ul li.catmenu-link3:hover .menu3{
+    display: block;
+}
+
+nav .catmenu-link3 .menu3 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu3 img{
+    margin-top: 5px ;
+    border-radius: 50%;
+    margin-right: 10px ;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+/***Ev&Yaşam***/
+
+.menu4{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 170px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link4 .menu4 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link4 .menu4 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link4 .menu4 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+nav ul li.catmenu-link4:hover .menu4{
+    display: block;
+}
+
+nav .catmenu-link4 .menu4 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s;
+}
+
+.menu4 img{
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+/***Kişisel Bakım***/
+
+
+.menu5{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 150px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link5 .menu5 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link5 .menu5 ul li a{
+    display: flex;
+    position: relative;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link5 .menu5 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+nav ul li.catmenu-link5:hover .menu5{
+    display: block;
+}
+
+nav .catmenu-link5 .menu5 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu5 img{
+    border: 1px solid rgb(223, 126, 243);
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+/***Kırtasiye***/
+
+.menu6{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 190px;
+    min-height: 150px;
+    margin-left: 120px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link6 .menu6 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link6 .menu6 ul li a{
+    display: flex;
+    position: relative;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link6 .menu6 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+
+nav ul li.catmenu-link6:hover .menu6{
+    display: block;
+}
+
+nav .catmenu-link6 .menu6 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+}
+
+.menu6 img{
+    border-radius: 50%;
+    border: 1px solid rgb(223, 126, 243);
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/***Adres Düzenle***/
+
+.adress{
+    margin: auto;
+    background: #faf2f271;
+    width: 460px;
+    border-radius: 6px;
+    max-height: 95vh;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    border: 0.5px solid #c4c2c2;
+
+}
+
+.adress .title{
+    border-bottom: solid 1px #e6e6e6;
+    padding: 14px 20px;
+    display: block;
+}
+
+.adress .title span{
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+}
+
+.adres-form{
+    display: flex;
+    position: relative;
+    transition: 1s;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.adres-form .form{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.first .name{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.first .name label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.first .name input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+}
+
+
+.first .sname{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.first .sname label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.first .sname input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+}
+
+.second{
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.second .no{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.second .no label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.second .no input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+    font-size: 10px;
+}
+
+.second .il{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.second .il label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.second .il input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+    font-size: 10px;
+}
+
+.third{
+    flex-direction: row;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.third .ilçe{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.third .ilçe label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.third .ilçe input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+    font-size: 10px;
+}
+
+.third .mahalle{
+    margin-right: 20px;
+    width: 50%;
+    margin-bottom: 5px;
+    flex-direction: column;
+}
+
+.third .mahalle label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.third .mahalle input{
+    height: 42px;
+    border-radius: 6px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+    font-size: 10px;
+}
+
+.adres{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.form .adres label{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.form .adres input{
+    height: 60px;
+    border-radius: 6px;
+    padding: 2px 3px;
+    font: inherit;
+    box-sizing: border-box;
+    width: 90%;
+    transition: all .3s ease;
+    outline: 0;
+    background-color: #fbfbfb;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    text-align: start;
+}
+
+.fatura label{
+    margin-bottom: 4px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: default;
+    margin-top: 20px;
+}
+
+.fatura .buton{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+
+.fatura button{
+    padding: 12px;
+    width: 40%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    display: block;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1.5px solid rgb(223, 126, 243);
+}
+
+.save{
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+
+.save button{
+    padding: 15px 70px 15px 70px;
+    border-radius: 8px;
+    color: black;
+    background: linear-gradient(to right, #ff00ea , #e073e0);
+    border: none;
+    font-size: 13px;
+}
+
+
+/***Footer Kısmı***/
+
+.footer{
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgb(248, 236, 236);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 80px;
+}
+
+.box-container{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.box1{
+    width: 33.3%;
+}
+
+.box1 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box1 ul{
+    list-style:none ;
+}
+
+.box1  ul li{
+    margin-top: 25px;
+}
+
+.box1  ul li a{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.box1 ul li a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.2s;
+}
+
+.box2{
+    width: 500px;
+    margin-left: 200px;
+}
+
+.box2 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box2 ul{
+    list-style: none;
+}
+
+.box2 ul li{
+    margin-top: 37px;
+    text-decoration: none;
+    color: #1b1b1b;
+    font-size: 13px;
+}
+
+.box3{
+    width: 500px;
+    margin-left: 130px;
+}
+
+.box3 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box3 ul{
+    list-style: none;
+}
+
+.box3 ul li{
+    margin-top: 47px;
+    text-decoration: none;
+    color: #1b1b1b;
+    font-size: 15px;
+}
+

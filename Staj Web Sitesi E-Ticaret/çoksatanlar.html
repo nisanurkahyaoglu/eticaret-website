@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="çoksatanlar.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Çok Satanlar</title>
+</head>
+<body>
+    
+     <!--Navbar Kısmı-->
+
+   <header class="header">
+       <div class="container">
+           <div class="logo-container">
+               <div class="logo"></div>
+           </div>
+
+           <div class="search-container">
+               <input type="text" placeholder="Aradığınız ürün , kategori veya markayı yazınız " class="search-input"/>
+
+              <div class="search-icon">
+                <i class="fa-regular fa-magnifying-glass" style="color: #000000;"></i>
+              </div>
+              
+           </div>
+
+        
+             <div class="login-container">
+                <a href="indexlogin.html"><i class="fa-solid fa-user" style="color: #000000;"></i>Giriş Yap</a>   
+             </div>
+
+             <div class="favorites-container">
+                <a href="#"><i class="fa-solid fa-heart" style="color: #000000;"></i>Favoriler</a>
+            </div>
+
+             <div class="shopping-container">
+                <a href="shopping-cart.php">
+                    <div class="wrapper">
+                         <i class="fa" style="font-size:16px">&#xf07a;</i><span class="cart-count">Sepetim</span>
+                        
+                    </div>
+               </a>
+             </div>
+
+       </div>
+   </header>
+
+  <!--Kategoriler-->
+
+<div class="navigation-wrapper">
+       <nav>
+           <ul class="main-nav">
+               <li class="catmenu-link1">
+                   <a href="#">Moda</a>
+                   <div class="menu1">
+                       <ul>
+                           <li><a href="womancat.php" class="menu-ıtem" title="Kadın Giyim">
+                            <img src="resimler/kadıngiyim.png" alt="" width="40" height="40"><span>Kadın Giyim</span></a></li>
+                           <li><a href="mancat.php" class="menu-ıtem" title="Erkek Giyim">
+                            <img src="resimler/erkekgiyim.png" alt="" width="40" height="40"><span>Erkek Giyim</span></a></li>
+                           <li><a href="kidcat.php" class="menu-ıtem" title="Çocuk Giyim">
+                            <img src="resimler/çocukgiyim.png" alt="" width="40" height="40"><span>Çocuk Giyim</span></a></li>
+                           <li><a href="shoe-bagcat.php" class="menu-ıtem" title="Ayakkabı&Çanta">
+                            <img src="resimler/ayakkabıçanta.png" alt="" width="40" height="40"><span>Ayakkabı&Çanta</span></a></li>
+                       </ul>
+                   </div>
+                </li>
+
+
+               <li class="catmenu-link2">
+                   <a href="#">Elektronik</a>
+                   <div class="menu2">
+                       <ul>
+                           <li><a href="elec-cat.php" class="menu-ıtem" title="Telefon&Aksesuarları">
+                            <img src="resimler/telefon.png" alt="" width="40" height="40"> <span>Telefon&Aksesuarları</span></a></li>
+                           <li><a href="bilg-cat.php" class="menu-ıtem" title="Bilgisayar">
+                            <img src="resimler/bilgisayar.png" alt="" width="40" height="40"><span>Bilgisayar</span></a></li>
+                           <li><a href="beyazeşya-cat.php" class="menu-ıtem" title="Beyaz Eşya">
+                            <img src="resimler/beyazeşya.png" alt="" width="40" height="40"><span>Beyaz Eşya</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Elektrikli Ev Aletleri">
+                            <img src="resimler/evaleti.png" alt="" width="40" height="40"><span>Elektrikli Ev Aletleri</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Foto&Kamera">
+                            <img src="resimler/fotokamera.png" alt="" width="40" height="40"><span>Foto&Kamera</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Kişisel Bakım Aletleri">
+                            <img src="resimler/videooyun.png" alt="" width="40" height="40"><span>Video Oyun&Konsol</span></a></li>
+                        </ul>
+                   </div>
+                </li>
+
+
+               <li class="catmenu-link3">
+                   <a href="#">Anne&Bebek</a>
+                   <div class="menu3">
+                       <ul>
+                            <li><a href="#" class="menu-ıtem" title="Bebek Bezi&Islak Mendil">
+                              <img src="resimler/bezmendil.png" alt="" width="40" height="40"><span>Bebek Bezi&Islak Mendil</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Bebek Giyim">
+                              <img src="resimler/bebekgiyim.png" alt="" width="40" height="40"><span>Bebek Giyim</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Bebek Arabaları">
+                              <img src="resimler/bebekaraba.png" alt="" width="40" height="40"><span>Bebek Arabaları</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Bebek Bakım&Sağlık">
+                              <img src="resimler/bebekbakım.png" alt="" width="40" height="40"><span>Bebek Bakım&Sağlık</span></a></li>
+                        </ul>
+                   </div>
+                </li>
+
+
+               <li class="catmenu-link4">
+                   <a href="#">Ev&Yaşam</a>
+                   <div class="menu4">
+                        <ul>
+                            <li><a href="#" class="menu-ıtem" title="Mobilya">
+                               <img src="resimler/mobilya.png" alt="" width="40" height="40"><span>Mobilya</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Aydınlatma">
+                               <img src="resimler/aydınlatma.png" alt="" width="40" height="40"><span>Aydınlatma</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Mutfak Gereçleri">
+                               <img src="resimler/mutfak.png" alt="" width="40" height="40"><span>Mutfak Gereçleri</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Banyo Gereçleri">
+                               <img src="resimler/banyo.png" alt="" width="40" height="40"><span>Banyo Gereçleri</span></a></li>
+                        </ul>
+                   </div>
+                </li>
+
+
+               <li class="catmenu-link5">
+                   <a href="#">Kişisel Bakım</a>
+                   <div class="menu5">
+                       <ul>
+                            <li><a href="#" class="menu-ıtem" title="Saç Bakım&Şekillendirme">
+                                <img src="resimler/saçbakım.png" alt="" width="40" height="40"><span>Saç Bakım&Şekillendirme</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Cilt Bakımı">
+                                <img src="resimler/ciltbakım.png" alt="" width="40" height="40"><span>Cilt Bakımı</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Sağlık&Medikal Ürünler">
+                                <img src="resimler/sağlık.png" alt="" width="40" height="40"><span>Sağlık&Medikal Ürünler</span></a></li>
+                            <li><a href="#" class="menu-ıtem" title="Ağız&Diş Bakımı">
+                                <img src="resimler/ağızbakım.png" alt="" width="40" height="40"><span>Ağız&Diş Bakımı</span></a></li>
+                       </ul>
+                   </div>
+                </li>
+
+
+               <li class="catmenu-link6">
+                   <a href="#">Kitap,Müzik,Film,Oyun</a>
+                   <div class="menu6">
+                       <ul>
+                           <li><a href="#" class="menu-ıtem" title="Kitap">
+                               <img src="resimler/kitap.png" alt="" width="40" height="40"><span>Kitap</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Müzik">
+                               <img src="resimler/müzik.png" alt="" width="40" height="40"><span>Müzik</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Film">
+                               <img src="resimler/film.png" alt="" width="40" height="40"><span>Film</span></a></li>
+                           <li><a href="#" class="menu-ıtem" title="Oyun">
+                               <img src="resimler/oyun.png" alt="" width="40" height="40"><span>Oyun</span></a></li>
+                        </ul>
+                   </div>
+                </li>
+
+           </ul>
+       </nav>
+</div>
+
+<!---->
+
+<section class="product-page">
+    <div class="product-details">
+        <div class="product-img">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="resimler/çoksatanelbise.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="resimler/çoksatanelbise2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="resimler/çoksatanelbise3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="resimler/çoksatanelbise4.jpg" alt="">
+                </div>
+                </div>
+                <div class="slider-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+              </div>
+
+            <div class="img-social-bar">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram "></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="product-text">
+            <span class="product-category">Haftanın Popüler Ürünleri</span>
+            <h3>Yaza Uygun Elbiseler</h3>
+            <span class="product-price">365.99 TL</span>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae assumenda numquam consequuntur suscipit autem, officia eveniet molestias porro adipisci id similique a, et animi sint? Ratione reprehenderit deserunt harum eius.
+                <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolor dignissimos placeat, modi ipsum, voluptate molestiae error similique corrupti tenetur repudiandae culpa corporis officia porro rem incidunt soluta, illum omnis?</p>
+
+            <div class="product-size-cont">
+                <strong>Beden Seçin : </strong>
+                <div class="product-size">
+
+                    <input type="checkbox" class="s-checkbox" id="s-xl">
+                    <label for="s-xl" class="s-label">XL</label>
+
+                    <input type="checkbox" class="s-checkbox" id="s-s">
+                    <label for="s-s" class="s-label">S </label>
+
+                    <input type="checkbox" class="s-checkbox" id="s-m">
+                    <label for="s-m" class="s-label">M</label>
+
+                    <input type="checkbox" class="s-checkbox" id="s-l">
+                    <label for="s-l" class="s-label">L</label>
+
+                </div>
+            </div>
+
+            <div class="products-buttons">
+                <a href="#" class="add-bag-btn">Sepete Ekle</a>
+                <a href="#" class="add-wishlist-btn">Favorilere Ekle</a>
+            </div>
+
+            <a href="#" class="help-btn">Yardıma İhtiyacın Var Mı ? </a>
+
+        </div>
+    </div>
+</section>
+
+
+<script   src="https://code.jquery.com/jquery-3.7.1.js"  
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="  
+crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+
+    $('.s-checkbox').on('change',function(){
+        $('.s-checkbox').not(this).prop('checked',false);
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+      },
+    });
+
+</script>
+
+</body>
+</html>

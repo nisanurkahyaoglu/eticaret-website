@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION["id"]);
+unset($_SESSION["isim"]);
+unset($_SESSION["soyisim"]);
+unset($_SESSION["eposta"]);
+unset($_SESSION["şifre"]);
+header("Location:index.html");
+?>

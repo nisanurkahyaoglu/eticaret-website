@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.sidenav{
+    height: 100%;
+    width: 240px;
+    background-color: rgb(23, 14, 46) ;       
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    position: fixed;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin: 0;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sidenav a{
+    text-decoration: none;
+    padding: 15px 8px 15px 32px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: block;
+    margin-top: 50px;
+}
+
+.sidenav a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.sidenav i:hover{
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/***/
+
+
+.main-container{
+    grid-area:main;
+    overflow-y: auto;
+    padding: 10px 10px;
+    color: rgba(255, 255, 255,0.95);
+    margin-left: 240px;
+}
+
+.main-title{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 5px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.card:first-child{
+    background-color: #db29ff85;
+}
+
+.card:nth-child(2){
+    background-color: #ff6f0071;
+}
+
+.card:nth-child(3){
+    background-color: #2e7d3275;
+}
+
+.card:nth-child(4){
+    background-color: #d500007a;
+}
+
+.card-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.infos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.infos td, .infos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+  }
+  
+.infos tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.infos tr:hover {
+    background-color: #ddd;
+}
+  
+.infos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(23, 14, 46);
+    color: white;
+}
+
+.main-container .infos-title{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}

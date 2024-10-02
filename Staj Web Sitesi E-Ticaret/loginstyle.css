@@ -1,0 +1,822 @@
+*{
+    box-sizing: border-box;  
+    font-family: sans-serif;
+}
+
+body{
+     margin: 0;
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+
+.header{
+    background-color:  rgba(250, 242, 242, 0.411);
+    height: 100px;
+}
+
+.container{
+    width: 99%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.logo-container{
+    height: 86px;
+    width: 200px;
+
+}
+
+.logo{
+    background: url("resimler/TrendMentor-4.png");
+    height: 100px; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -120pX;
+    background-position-x: -50px;
+    cursor: pointer;
+}
+
+header{
+    z-index: 100;
+}
+
+/***Arama Çubuğu***/
+
+.search-container{
+    margin-left: 110px;
+    background-color: rgb(228, 176, 245) ;
+    width: 650px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 27px;
+    overflow: hidden;
+}
+
+.search-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(223, 126, 243);
+    border-right: 0;
+    outline: none;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.search-icon{
+    width: 40px;
+    background-color:rgb(228, 176, 245) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;   
+}
+
+/***Giriş Yap***/
+
+.login-container{
+    margin-left: 50px;
+    margin-top: 25px;
+    border: 1px solid rgb(223, 126, 243);
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+.login-container i{
+    font-size: 15px ;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.login-container a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.login-container a:hover{
+   color: rgb(223, 126, 243);
+   transition: 0.3s;
+   text-decoration: underline;
+}
+
+/***Favoriler***/
+
+.favorites-container{
+    margin-left: 50px;
+    margin-top: 25px;
+    height: 40px;
+    width: 90px;
+    border: 1px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+.favorites-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.favorites-container a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s;
+    text-decoration: underline;
+ }
+ 
+
+.favorites-container i{
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+/***Sepetim Kısmı***/
+
+.shopping-container{
+    margin-left: 50px;
+    height: 40px;
+    width: 90px;
+    margin-top: 25px;
+    border: 1px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+.shopping-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+   
+}
+
+.shopping-container a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s;
+    text-decoration: underline;
+ }
+ 
+
+.shopping-container i{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+/***Kategoriler***/
+
+.navigation-wrapper{
+    float: left;
+    position: relative;
+    border-bottom: 1px solid #c4c2c2;
+}
+
+nav{
+    margin: 0 auto;
+    display: flex;
+    width: 1450px;
+    height: 18px;
+    position: relative;
+    margin-top: 0;
+    background-color: rgb(248, 236, 236);
+}
+
+nav ul.main-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    width: 100%;
+    position: relative;
+}
+
+nav ul.main-nav li a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+/***Açılır Menü***/
+
+/***Moda***/
+
+.menu1{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 160px;
+    margin-left: 60px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav ul.main-nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 13px;
+    margin-left: 130px
+}
+
+nav .catmenu-link1 .menu1 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-top: 5px;
+    margin-right: 30px;
+    
+}
+
+nav .catmenu-link1 .menu1 ul li a{
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link1 .menu1 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px
+}
+
+
+nav ul li.catmenu-link1:hover .menu1{
+    display: block;
+}
+
+nav .catmenu-link1 .menu1 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu1 img{
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+    
+}
+
+/***Elektronik***/
+
+.menu2{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 190px;
+    margin-left: 50px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link2 .menu2 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+nav .catmenu-link2 .menu2 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto;
+}
+
+nav .catmenu-link2 .menu2 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+nav ul li.catmenu-link2:hover .menu2{
+    display: block;
+}
+
+nav .catmenu-link2 .menu2 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu2 img{
+    margin-top: 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+    
+}
+
+/***Anne&Bebek***/
+
+.menu3{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 140px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+nav .catmenu-link3 .menu3 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link3 .menu3 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link3 .menu3 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+nav ul li.catmenu-link3:hover .menu3{
+    display: block;
+}
+
+nav .catmenu-link3 .menu3 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu3 img{
+    margin-top: 5px ;
+    border-radius: 50%;
+    margin-right: 10px ;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+/***Ev&Yaşam***/
+
+.menu4{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 170px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+nav .catmenu-link4 .menu4 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link4 .menu4 ul li a{
+    color: black;
+    position: relative;
+    display: flex;
+    vertical-align: text-top;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link4 .menu4 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+nav ul li.catmenu-link4:hover .menu4{
+    display: block;
+}
+
+nav .catmenu-link4 .menu4 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.3s
+}
+
+.menu4 img{
+    margin-top: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(223, 126, 243);
+}
+
+/***Kişisel Bakım***/
+
+
+.menu5{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 110px;
+    min-height: 150px;
+    margin-left: 70px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link5 .menu5 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link5 .menu5 ul li a{
+    display: flex;
+    position: relative;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link5 .menu5 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+nav ul li.catmenu-link5:hover .menu5{
+    display: block;
+}
+
+nav .catmenu-link5 .menu5 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.menu5 img{
+    border: 1px solid rgb(223, 126, 243);
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+/***Kırtasiye***/
+
+.menu6{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    min-width: 190px;
+    min-height: 150px;
+    margin-left: 120px;
+    background-color: rgb(248, 236, 236);
+    border-top: 2px solid rgb(223, 126, 243);
+    border-radius: 10px;
+}
+
+nav .catmenu-link6 .menu6 ul li{
+    display: block;
+    text-decoration: none;
+    list-style-image: none ;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+
+nav .catmenu-link6 .menu6 ul li a{
+    display: flex;
+    position: relative;
+    vertical-align: text-top;
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto; 
+}
+
+nav .catmenu-link6 .menu6 ul li a span{
+    color: black;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 18px; 
+}
+
+
+nav ul li.catmenu-link6:hover .menu6{
+    display: block;
+}
+
+nav .catmenu-link6 .menu6 ul li a span:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.1s;
+}
+
+.menu6 img{
+    border-radius: 50%;
+    border: 1px solid rgb(223, 126, 243);
+    margin-top: 5px;
+    margin-right: 10px ;
+}
+
+/***Login Ekranı***/
+
+.form-box{
+    width: 380px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    background: rgb(248, 236, 236);
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.button-box{
+    width: 220px;         
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px rgb(228, 176, 245);
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff00ea , #e073e0);
+    border-radius: 30px ;
+    transition: 0.5s;
+}
+
+.input-group{
+    top: 100px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    color: #9b9999;
+}
+
+.input-field{
+    width: 100%;
+    padding: 13px 0;
+    margin: 20px 0;
+    border: 1px solid #9b9999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff00ea , #e073e0);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.submit-btn1{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff00ea , #e073e0);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+.input-group span{
+    font-size: 13px;
+    color: #777;
+    bottom: 63px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+.marketing-checkbox{
+    margin-top: 8px;
+}
+
+.marketing-checkbox .check-text1{
+    top: 335px;
+}
+
+.personal-checkbox{
+    margin-top: 27px;
+}
+
+.personal-checkbox .check-text2{
+    top: 380px;
+}
+
+.lr-title{
+    text-align: center;
+    align-items: center;
+    color: #333333;
+    margin-top: 30px;
+}
+
+.lr-title h1{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.lr-title h3{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.input-group select{
+    width: 100%;
+    padding: 10px 15px ;
+    font-size: 10px;
+    margin: 8px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+.input-group select option{
+    background: #fff;
+}
+
+/***Footer Kısmı***/
+
+.footer{
+    margin: 0;
+    float: left;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgb(248, 236, 236);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-container{
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.box1{
+    width: 33.3%;
+}
+
+.box1 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box1 ul{
+    list-style:none ;
+}
+
+.box1  ul li{
+    margin-top: 25px;
+}
+
+.box1  ul li a{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.box1 ul li a:hover{
+    color: rgb(223, 126, 243);
+    transition: 0.2s;
+}
+
+.box2{
+    width: 500px;
+    margin-left: 200px;
+}
+
+.box2 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box2 ul{
+    list-style: none;
+}
+
+.box2 ul li{
+    margin-top: 37px;
+    text-decoration: none;
+    color: #1b1b1b;
+    font-size: 13px;
+}
+
+.box3{
+    width: 500px;
+    margin-left: 130px;
+}
+
+.box3 h5{
+    font-size: 18px;
+    line-height: 1.2;
+    box-sizing: border-box;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.box3 ul{
+    list-style: none;
+}
+
+.box3 ul li{
+    margin-top: 47px;
+    text-decoration: none;
+    color: #1b1b1b;
+    font-size: 15px;
+}
+
+
+
+
